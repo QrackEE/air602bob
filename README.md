@@ -8,6 +8,7 @@ For additional $1, [Development Board](https://www.seeedstudio.com/Air602-WiFi-D
 Board requirements definition is as follows:
 
 - breakout castellations to breadboard-compatible goldpins,
+- pinout compatible with the module itself (incl. optional antenna routing through goldpin),
 - antenna pad, (u.fl) connector or on-board (chip/F) antenna,
 - at least few boards maufactured,
 - hardware development in freely available package, i.e Kicad.
