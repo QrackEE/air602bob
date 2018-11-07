@@ -1,32 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x04_Male
-#
-DEF Connector_Conn_01x04_Male J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x04_Male" 0 -300 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S 34 -195 0 -205 1 1 6 F
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-P 2 1 1 6 50 -200 34 -200 N
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-X Pin_1 1 200 100 150 L 50 50 1 1 P
-X Pin_2 2 200 0 150 L 50 50 1 1 P
-X Pin_3 3 200 -100 150 L 50 50 1 1 P
-X Pin_4 4 200 -200 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_Conn_01x06_Male
 #
 DEF Connector_Conn_01x06_Male J 0 40 Y N 1 F N
@@ -59,15 +33,37 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# air606bob_specific_AIR602
+# Jumper_SolderJumper_2_Open
 #
-DEF air606bob_specific_AIR602 U 0 40 Y Y 1 F N
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# air606bob_specific_AIR602-air606bob_specific
+#
+DEF air606bob_specific_AIR602-air606bob_specific U 0 40 Y Y 1 F N
 F0 "U" -200 350 50 H V C CNN
-F1 "air606bob_specific_AIR602" -100 250 50 H V C CNN
+F1 "air606bob_specific_AIR602-air606bob_specific" -100 250 50 H V C CNN
 F2 "" -250 350 50 H I C CNN
 F3 "" -250 350 50 H I C CNN
 DRAW
-S -250 200 200 -400 0 1 0 N
+S -250 200 200 -400 0 1 0 f
 X GND 1 300 150 100 L 50 50 1 1 W
 X Rx1 10 -350 -50 100 R 50 50 1 1 B
 X Tx1 11 -350 50 100 R 50 50 1 1 B
@@ -83,11 +79,11 @@ X RTS 9 -350 -150 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# air606bob_specific_u.fl
+# air606bob_specific_u.fl-air606bob_specific
 #
-DEF air606bob_specific_u.fl AE 0 40 N N 1 F N
+DEF air606bob_specific_u.fl-air606bob_specific AE 0 40 N N 1 F N
 F0 "AE" -150 50 50 H V C CNN
-F1 "air606bob_specific_u.fl" -150 -50 50 H V C CNN
+F1 "air606bob_specific_u.fl-air606bob_specific" -150 -50 50 H V C CNN
 F2 "" -150 50 50 H I C CNN
 F3 "" -150 50 50 H I C CNN
 DRAW

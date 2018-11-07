@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name air606bob_specific)(type Legacy)(uri /home/qrackee/workspace/kicad/air602bob/air606bob_specific.lib)(options "")(descr ""))
+  (lib (name air606bob_specific)(type Legacy)(uri ${KIPRJMOD}/air606bob_specific.lib)(options "")(descr ""))
+  (lib (name air602)(type Legacy)(uri ${KIPRJMOD}/air602/air602.lib)(options "")(descr ""))
 )
