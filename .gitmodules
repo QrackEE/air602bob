@@ -1,3 +1,6 @@
 [submodule "air602"]
 	path = air602
 	url = https://github.com/arturo182/air602
+[submodule "Air602_WiFi_Module"]
+	path = Air602_WiFi_Module
+	url = https://github.com/SeeedDocument/Air602_WiFi_Module

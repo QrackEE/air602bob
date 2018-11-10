@@ -15,25 +15,14 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L air606bob_specific:u.fl-air606bob_specific AE1
-U 1 1 5BD935FD
-P 5500 1800
-F 0 "AE1" H 5531 2015 50  0000 C CNN
-F 1 "u.fl" H 5531 1924 50  0000 C CNN
-F 2 "" H 5350 1850 50  0001 C CNN
-F 3 "" H 5350 1850 50  0001 C CNN
-	1    5500 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 5BD936E5
-P 5600 1800
-F 0 "#PWR01" H 5600 1550 50  0001 C CNN
-F 1 "GND" H 5605 1627 50  0000 C CNN
-F 2 "" H 5600 1800 50  0001 C CNN
-F 3 "" H 5600 1800 50  0001 C CNN
-	1    5600 1800
+P 6000 1550
+F 0 "#PWR01" H 6000 1300 50  0001 C CNN
+F 1 "GND" H 6005 1377 50  0000 C CNN
+F 2 "" H 6000 1550 50  0001 C CNN
+F 3 "" H 6000 1550 50  0001 C CNN
+	1    6000 1550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -62,7 +51,7 @@ L Connector:Conn_01x06_Male J1
 U 1 1 5BD966A0
 P 3550 3300
 F 0 "J1" H 3656 3678 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 3656 3587 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 3656 3587 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3550 3300 50  0001 C CNN
 F 3 "~" H 3550 3300 50  0001 C CNN
 	1    3550 3300
@@ -73,13 +62,13 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Male J2
 U 1 1 5BE3318E
-P 6200 3400
-F 0 "J2" H 6306 3778 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 6306 3687 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6200 3400 50  0001 C CNN
-F 3 "~" H 6200 3400 50  0001 C CNN
-	1    6200 3400
-	-1   0    0    1   
+P 6200 3300
+F 0 "J2" H 6306 3678 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 6306 3587 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6200 3300 50  0001 C CNN
+F 3 "~" H 6200 3300 50  0001 C CNN
+	1    6200 3300
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Open JP1
@@ -87,7 +76,7 @@ U 1 1 5BE3446A
 P 5750 3200
 F 0 "JP1" H 5750 3350 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6200 3400 50  0001 C CNN
-F 2 "solder*" H 5750 3200 50  0001 C CNN
+F 2 "air602bob:SolderJumper-2_P0.6mm_Open_RoundedPad0.5x0.8mm" H 5750 3200 50  0001 C CNN
 F 3 "~" H 5750 3200 50  0001 C CNN
 	1    5750 3200
 	1    0    0    -1  
@@ -97,8 +86,8 @@ L Device:C_Small C2
 U 1 1 5BE6EE15
 P 5300 2800
 F 0 "C2" V 5529 2800 50  0000 C CNN
-F 1 "C_Small" V 5438 2800 50  0000 C CNN
-F 2 "" H 5300 2800 50  0001 C CNN
+F 1 "x pF" V 5438 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5300 2800 50  0001 C CNN
 F 3 "~" H 5300 2800 50  0001 C CNN
 	1    5300 2800
 	0    -1   -1   0   
@@ -108,8 +97,8 @@ L Device:C_Small C1
 U 1 1 5BE6F551
 P 5300 2300
 F 0 "C1" V 5529 2300 50  0000 C CNN
-F 1 "C_Small" V 5438 2300 50  0000 C CNN
-F 2 "" H 5300 2300 50  0001 C CNN
+F 1 "x pF" V 5438 2300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5300 2300 50  0001 C CNN
 F 3 "~" H 5300 2300 50  0001 C CNN
 	1    5300 2300
 	0    -1   -1   0   
@@ -119,8 +108,8 @@ L Device:L L1
 U 1 1 5BE6F5B1
 P 5500 2500
 F 0 "L1" H 5553 2546 50  0000 L CNN
-F 1 "L" H 5553 2455 50  0000 L CNN
-F 2 "" H 5500 2500 50  0001 C CNN
+F 1 "x nH" H 5553 2455 50  0000 L CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5500 2500 50  0001 C CNN
 F 3 "~" H 5500 2500 50  0001 C CNN
 	1    5500 2500
 	1    0    0    -1  
@@ -191,5 +180,92 @@ Connection ~ 5300 3300
 Wire Wire Line
 	5300 3300 6000 3300
 Wire Wire Line
-	5500 2300 5500 1900
+	5500 2300 5500 2200
+$Comp
+L air606bob_specific:PIFA ANT1
+U 1 1 5BE6D73E
+P 5150 1450
+F 0 "ANT1" H 5206 1915 50  0000 C CNN
+F 1 "PIFA" H 5206 1824 50  0000 C CNN
+F 2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Left" H 5150 1450 50  0001 C CNN
+F 3 "" H 5150 1450 50  0001 C CNN
+	1    5150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5BE6D88D
+P 5500 2050
+F 0 "JP2" H 5500 2150 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5950 2250 50  0001 C CNN
+F 2 "air602bob:SolderJumper-2_P0.6mm_Open_RoundedPad0.5x0.8mm" H 5500 2050 50  0001 C CNN
+F 3 "~" H 5500 2050 50  0001 C CNN
+	1    5500 2050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5500 2200
+$Comp
+L power:GND #PWR04
+U 1 1 5BE6DFBA
+P 5250 1550
+F 0 "#PWR04" H 5250 1300 50  0001 C CNN
+F 1 "GND" H 5255 1377 50  0000 C CNN
+F 2 "" H 5250 1550 50  0001 C CNN
+F 3 "" H 5250 1550 50  0001 C CNN
+	1    5250 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial XA1
+U 1 1 5BE7543D
+P 5800 1550
+F 0 "XA1" V 6037 1480 50  0000 C CNN
+F 1 "u.Fl male" V 5946 1480 50  0000 C CNN
+F 2 "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" H 5800 1550 50  0001 C CNN
+F 3 " ~" H 5800 1550 50  0001 C CNN
+	1    5800 1550
+	0    -1   -1   0   
+$EndComp
+Text Label 5100 3400 0    50   ~ 0
+VCC
+$Comp
+L Device:C_Small C3
+U 1 1 5BE75E85
+P 4800 4250
+F 0 "C3" V 5029 4250 50  0000 C CNN
+F 1 "x pF" V 4938 4250 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4800 4250 50  0001 C CNN
+F 3 "~" H 4800 4250 50  0001 C CNN
+	1    4800 4250
+	1    0    0    -1  
+$EndComp
+Text Label 4800 4100 1    50   ~ 0
+VCC
+$Comp
+L power:GND #PWR05
+U 1 1 5BE76DB6
+P 4800 4350
+F 0 "#PWR05" H 4800 4100 50  0001 C CNN
+F 1 "GND" H 4805 4177 50  0000 C CNN
+F 2 "" H 4800 4350 50  0001 C CNN
+F 3 "" H 4800 4350 50  0001 C CNN
+	1    4800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3950 4800 4150
+Text Label 5050 3200 0    50   ~ 0
+FEED
+Text Label 5500 1900 1    50   ~ 0
+FEED_A
+Text Label 5800 2100 1    50   ~ 0
+FEED_X
+Wire Wire Line
+	5800 1750 5800 2200
+Wire Wire Line
+	5500 1450 5250 1450
+Wire Wire Line
+	5500 1450 5500 1900
+Wire Wire Line
+	5500 2200 5800 2200
 $EndSCHEMATC

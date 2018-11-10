@@ -33,6 +33,31 @@ X Pin_6 6 200 -300 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Conn_Coaxial
+#
+DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X In 1 -200 0 100 R 50 50 1 1 P
+X Ext 2 0 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -101,8 +126,11 @@ ENDDEF
 DEF air606bob_specific_AIR602-air606bob_specific U 0 40 Y Y 1 F N
 F0 "U" -200 350 50 H V C CNN
 F1 "air606bob_specific_AIR602-air606bob_specific" -100 250 50 H V C CNN
-F2 "" -250 350 50 H I C CNN
+F2 "air602:AIR602" -250 350 50 H I C CNN
 F3 "" -250 350 50 H I C CNN
+$FPLIST
+ air602:AIR602
+$ENDFPLIST
 DRAW
 S -250 200 200 -400 0 1 0 f
 X GND 1 300 150 100 L 50 50 1 1 W
@@ -120,19 +148,20 @@ X RTS 9 -350 -150 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# air606bob_specific_u.fl-air606bob_specific
+# air606bob_specific_PIFA
 #
-DEF air606bob_specific_u.fl-air606bob_specific AE 0 40 N N 1 F N
-F0 "AE" -150 50 50 H V C CNN
-F1 "air606bob_specific_u.fl-air606bob_specific" -150 -50 50 H V C CNN
-F2 "" -150 50 50 H I C CNN
-F3 "" -150 50 50 H I C CNN
+DEF air606bob_specific_PIFA ANT 0 40 N N 1 F N
+F0 "ANT" -150 150 50 H V C CNN
+F1 "air606bob_specific_PIFA" -150 100 50 H V C CNN
+F2 "RF_Antenna:Texas_SWRA117D_2.4GHz_Left" -250 50 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ RF_Antenna:Texas_SWRA117D_2.4GHz_Left
+$ENDFPLIST
 DRAW
-C 0 0 0 0 1 0 N
-C 0 0 0 0 1 0 N
-C 0 0 50 0 1 0 N
-X ANT 1 0 -100 124 U 50 50 1 1 P I
-X SHLD 2 100 0 50 L 50 50 1 1 P
+P 2 0 1 0 0 -100 0 300 N
+X ANT 1 100 0 100 L 50 50 1 1 P
+X REF 2 100 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
