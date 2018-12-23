@@ -20,6 +20,22 @@ Single MLCC is provided for power supply rail to the module.
 On breakout board, PI antenna matching network footprints are provided. Initially capacitors can be left unpopulated and inductance can be replaced with 0 Ohm resistor. It is worth to note that Air602 itself has some L antenna matching network with only series element populated.  
 Additionally, multiple antenna options are provided - by default only XA1 (u.fl/IPX connector) and XA2 (custom non-plated through-hole footprint) are available. Other options are ANT1 Printed Inverted F Antenna (PIFA) by soldering JP2 solder jumper and routing signal to J2-2 goldpin header pin by soldering JP1 solder jumper. The latest is straight from Air602 module and is least advised.
 
+## Connecting Printed IF / u.fl / Custom Coax Wire Antenna
+
+To connect through PIFA, following conditions must be met:
+
+- JP2 must be soldered,
+- JP1 must be open,
+- L1 must be populated (or bridged),
+- XA1, XA2 not populated
+
+
+> __! CAUTION !__  
+> Before XA1, XA2 or PIFA are used, make sure that XA2 was not manufactured as plated hole by checking for short to ground - top side pad _SHOULD NOT_ connect to bottom pad, which _SHOULD_ connect to ground.  
+> Depending on manufacturer, sometimes Non-Plated Through Holes (NPTH) can be ignored and manufactured plated.
+
+L1, C1, and C2 act as PI impedance matching filter - values are to be calculated.
+
 ## Connecting Antenna to Goldpin Header Pin JP2-2
 
 This method is not really advised with provided hardware design, but if this option is required (either by application or because other antenna means provided by breakout fail) following actions must be taken:
@@ -28,3 +44,4 @@ This method is not really advised with provided hardware design, but if this opt
 - C2 must be unpopulated,
 - L1 must be unpopulated,
 - It is advised to cut the feedline track which goes to the PI matching circuit near JP1 to reduce stub
+
