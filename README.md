@@ -1,9 +1,12 @@
 # ABOUT
 
 Simple breakout board for Air602 WiSoM module. [Seeed shop page with specifications](https://www.seeedstudio.com/Air602-WiFi-Module-p-3139.html) shows technical details (including dimensions and pinout), diagrams and pictures of this ~$2 piece.  
-For additional $1, [Development Board](https://www.seeedstudio.com/Air602-WiFi-Development-Board-p-3140.html) with USB connection is available.
+For additional $1, [Development Board](https://www.seeedstudio.com/Air602-WiFi-Development-Board-p-3140.html) with USB connection is available.  
+For getting started, see [Novakov repositories](https://github.com/Novakov):  
+- https://github.com/Novakov/air602-hello-world
+- https://github.com/Novakov/W600_SDK
 
-# REQUIREMENTS
+# DESIGN REQUIREMENTS
 
 Board requirements definition is as follows:
 
